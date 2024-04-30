@@ -3,22 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Halaman Login</title>
+    <title>Halaman Registrasi</title>
     <link rel="icon" href="dist/img/favicon.png">
     <!-- css bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.css" />
     <!-- my css -->
     <link rel="stylesheet" href="css/style.css" />
-    <style>
-      body {
-        background-color: #EE4D2D;
-      }
-    </style>
   </head>
   <body>
     <!-- Navbar start -->
     <nav
-      class="navbar navbar-expand-lg navbar-light shadow-sm fixed-top bg-light"
+      class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top "style="background-color: #EE4D2D;"
     >
       <div class="container">
         <a class="navbar-brand" href="index.html">Shopee</a>
@@ -49,7 +44,7 @@
           </ul>
         </div>
       </div>
-    </nav><br><br>
+    </nav><br><br><br>
     <!-- Navbar end -->
 
     <!-- tes -->
@@ -58,9 +53,9 @@
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-5">
-              <div class="card shadow-lg border-0 rounded-lg mt-4 mb-5">
+              <div class="card shadow-lg border-0 rounded-lg mt-5 mb-5">
                 <div class="card-header">
-                  <h3 class="text-center font-weight-light my-4">Login</h3>
+                  <h3 class="text-center font-weight-light my-4">Registrasi</h3>
                 </div>
                 <div class="card-body">
                   <form>
@@ -80,13 +75,40 @@
                         type="password"
                         placeholder="Password"
                       />
+                      <label for="inputPassword">No handphone</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input
+                        class="form-control"
+                        id="inputPassword"
+                        type="password"
+                        placeholder="Password"
+                      />
+                      <label for="inputPassword">Alamat</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input
+                        class="form-control"
+                        id="inputPassword"
+                        type="password"
+                        placeholder="Password"
+                      />
+                      <label for="inputPassword">Email</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input
+                        class="form-control"
+                        id="inputPassword"
+                        type="password"
+                        placeholder="Password"
+                      />
                       <label for="inputPassword">Password</label>
                     </div>
                     <div
                       class="d-flex align-items-center justify-content-between mt-4 mb-0"
                     >
-                      <a type="button" class="btn btn-primary" href="dashboard.html">Login</a>
-                      <a type="button" class="btn btn-primary " href="registrasi.html">Registrasi</a>
+                    <a type="button" class="btn btn-primary " href="login.html">Registrasi</a>
+                      <a type="button" class="btn btn-primary" href="login.html">Login</a>
                     </div>
                   </form>
                 </div>
@@ -95,11 +117,11 @@
           </div>
         </div>
       </main>
-    </div>
+    </div><br>
     <!-- tes -->
 
     <!-- Footer Start -->
-    <!-- <footer class="text-dark text-center pb-1 pt-3 mt-5 bg-light">
+    <footer class="text-white text-center pb-1 pt-3 mt-5" style="background-color: #EE4D2D;">
       <p>
         Created with
         <svg
@@ -118,11 +140,11 @@
         by
         <a
           href="https://www.instagram.com/badiatulroziqin/"
-          class="text-dark fw-bold"
+          class="text-white fw-bold"
           >Badiatul Roziqin</a
         >
       </p>
-    </footer> -->
+    </footer>
     <!-- Footer End -->
 
     <script src="js/bootstrap.js"></script>
