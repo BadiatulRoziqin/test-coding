@@ -1,306 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Halaman Login</title>
-    <link rel="icon" href="dist/img/favicon.png" />
-    <!-- css bootstrap -->
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <!-- my css -->
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <!-- dashboard start -->
-    <nav
-      class="navbar navbar-expand-lg navbar-light text-white"
-      style="background-color: #ee4d2d"
-    >
-      <div class="container-fluid">
-        <button
-          class="btn btn-outline-white fw-bold"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasMenu"
-          aria-controls="offcanvasMenu"
-          data-bs-placement="start"
-        >
-          Menu<svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            class="bi bi-list"
-            viewBox="0 0 16 16"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-            />
-          </svg>
-        </button>
+<html lang="en" data-bs-theme="dark">
 
-        <div
-          class="collapse navbar-collapse justify-content-center"
-          id="navbarCenteredExample"
-        ></div>
-      </div>
-    </nav>
-    <div
-      class="offcanvas offcanvas-start"
-      tabindex="-1"
-      id="offcanvasMenu"
-      aria-labelledby="offcanvasMenuLabel"
-    >
-      <div class="offcanvas-body text-white" style="background-color: #ee4d2d">
-        <ul class="navbar-nav mb-2 mb-lg-0">
-          <button
-            type="button"
-            class="btn-close position-absolute top-3 end-0"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close"
-          ></button>
-          <li class="nav-item">
-            <div class="align-items-start">
-              <a href="dashboard.html">
-                <button
-                  class="btn btn-transparent text-white"
-                  type="button"
-                  aria-expanded="false"
-                >
-                  <b>Home</b>
-                </button>
-              </a>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sidebar</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <aside id="sidebar" class="js-sidebar">
+            <!-- Content For Sidebar -->
+            <div class="h-100">
+                <div class="sidebar-logo">
+                    <a href="#">Shopee</a>
+                </div>
+                <ul class="sidebar-nav">
+                    <li class="sidebar-item">
+                        <a href="halaman-awal.html" class="sidebar-link">
+                            Home
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="profile.html" class="sidebar-link">
+                            Profile
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="pesanan.html" class="sidebar-link">
+                            Pesanan
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="login.html" class="sidebar-link">
+                            Logout
+                        </a>
+                    </li>
+                </ul>
             </div>
-          </li>
-          <li class="nav-item">
-            <a href="profile.html">
-              <button
-                class="btn btn-transparent text-white"
-                type="button"
-                aria-expanded="false"
-              >
-                <b>Profile</b>
-              </button>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="pesanan.html">
-              <button
-                class="btn btn-transparent text-white"
-                type="button"
-                aria-expanded="false"
-              >
-                <b>Pesanan</b>
-              </button>
-            </a>
-          </li>
-          <li class="nav-item btn-danger border rounded">
-            <a href="login.html" class="">
-              <button
-                class="btn btn-transparent text-white"
-                type="button"
-                aria-expanded="false"
-              >
-                <b>Logout</b>
-              </button>
-            </a>
-          </li>
-        </ul>
-          
-      </div>
-    </div>
-    <!-- dashboard end -->
+        </aside>
+        <div class="main">
+            <nav class="navbar navbar-expand px-3 bg-light">
+                <button class="btn d-md-none btn-custom" id="sidebar-toggle" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+            <main class="content px-3 py-2 bg-light">
+                <div class="container-fluid">
+                    <div class="mb-3 text-center">
+                        <h1 class="text-lg font-bold bg-gradien custom">Selamat Datang anonymous</h1>
+                    </div>
+                        <!-- welcome screen start -->
+        <!-- welcome screen start -->
+        <p class="fs-1 text-center mt-3 text-dark">Pesanan</p>
 
-    <!-- welcome screen start -->
-    <p class="fs-1 text-center mt-3">Pesanan</p>
-    <!-- welcome screen end -->
-
-    <!-- tes start -->
-    <!-- <div class="container mt-5">
-        <h2>Daftar Pesanan</h2>
-        <div class="table-responsive">
-          <table class="table table-striped">
+        <!-- dj -->
+        <div class="container text-center">
+          <table class="table table-bordered text-dark">
             <thead>
               <tr>
-                <th scope="col">#</th>
-                <th scope="col">Foto Produk</th>
-                <th scope="col">Harga</th>
-                <th scope="col">Tanggal Pesanan</th>
-                <th scope="col">Aksi</th>
+                <th>Tanggal</th>
+                <th>Nama Pesanan</th>
+                <th>Foto</th>
+                <th>Aksi</th>
               </tr>
             </thead>
-            <tbody> -->
-    <!-- Baris Pesanan 1 -->
-    <!-- <tr>
-                <th scope="row">1</th>
+            <tbody>
+              <tr>
+                <td>2024-06-01</td>
+                <td>Jam tangan Rolex</td>
                 <td>
                   <img
-                    src="dist/img/buku2.jpg"
-                    alt="Foto Produk"
-                    class="img-thumbnail"
-                    style="width: 250px; height: 250px;"
+                    src="dist/img/rolex.jpg"
+                    alt="jam"
+                    style="max-width: 100px; height: 100px"
                   />
                 </td>
-                <td>Rp 100.000</td>
-                <td>2024-05-01</td>
                 <td>
-                  <button class="btn btn-warning btn-sm">Edit</button>
-                  <button class="btn btn-danger btn-sm">Hapus</button>
+                  <button
+                    class="btn btn-primary btn-sm"
+                    data-bs-toggle="modal"
+                    data-bs-target="#detailModal"
+                  >
+                    Detail
+                  </button>
                 </td>
-              </tr> -->
-    <!-- Baris Pesanan 2 -->
-    <!-- <tr>
-                <th scope="row">2</th>
-                <td>
-                  <img
-                    src="https://via.placeholder.com/50"
-                    alt="Foto Produk"
-                    class="img-thumbnail"
-                    style="width: 50px; height: 50px;"
-                  />
-                </td>
-                <td>Rp 150.000</td>
-                <td>2024-05-02</td>
-                <td>
-                  <button class="btn btn-warning btn-sm">Edit</button>
-                  <button class="btn btn-danger btn-sm">Hapus</button>
-                </td>
-              </tr> -->
-    <!-- Tambahkan baris lainnya sesuai kebutuhan
+              </tr>
             </tbody>
           </table>
-        </div>
-      </div> -->
-    <!-- tes end -->
-
-    <!-- dj -->
-    <div class="container text-center">
-      <table class="table table-bordered">
-        <thead>
-          <tr>
-            <th>Tanggal</th>
-            <th>Nama Pesanan</th>
-            <th>Foto</th>
-            <th>Aksi</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>2024-06-01</td>
-            <td>Jam tangan Rolex</td>
-            <td>
-              <img
-                src="dist/img/rolex.jpg"
-                alt="jam"
-                style="max-width: 100px; height: 100px"
-              />
-            </td>
-            <td>
-              <button
-                class="btn btn-primary btn-sm"
-                data-bs-toggle="modal"
-                data-bs-target="#detailModal"
-              >
-                Detail
-              </button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-
-      <!-- Modal -->
-      <div
-        class="modal fade"
-        id="detailModal"
-        tabindex="-1"
-        aria-labelledby="detailModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="detailModalLabel">Detail Pesanan</h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">
-              <p>Nama Produk: Jam tangan Rolex</p>
-              <p>Tanggal Pesanan: 2024-06-01</p>
-              <p>Nomor Resi: 123456789</p>
-              <p>Jumlah Pesanan : 3</p>
-              <img
-                src="dist/img/rolex.jpg"
-                alt="Foto Buku Programming"
-                class="img-fluid"
-              />
-            </div>
-            <div class="modal-body">Harga : 50.000.000</div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-bs-dismiss="modal"
-              >
-                Tutup
-              </button>
+    
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="detailModal"
+            tabindex="-1"
+            aria-labelledby="detailModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="detailModalLabel">Detail Pesanan</h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p>Nama Produk: Jam tangan Rolex</p>
+                  <p>Tanggal Pesanan: 2024-06-01</p>
+                  <p>Nomor Resi: 123456789</p>
+                  <p>Jumlah Pesanan : 3</p>
+                  <img
+                    src="dist/img/rolex.jpg"
+                    alt="Foto Buku Programming"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="modal-body">Harga : 50.000.000</div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Tutup
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+        <!-- dj -->
+                </div>
+            </main>
+        </div>
     </div>
-    <!-- dj -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
 
-    <!-- detail start -->
-    <!-- <div class="row row-cols-md-3 row-cols-1 gx-3 p-5 mt-1">
-      <div class="col mb-4 mx-auto">
-        <div class="card shadow">
-          <h3 class="text-center my-4 mt-4" id="collections">Buku Deep Work</h3>
-          <img
-            src="../dist/img/buku2.jpg"
-            class="card-img-top"
-            alt="Atomic Habits"
-          />
-          <div class="card-body">
-            <p class="card-text">Buku Deep work</p>
-            <span class="ms-auto text-danger fw-bold d-block text-center"
-              >Rp. 75.000</span
-            >
-          </div>
-          <div class="card-footer d-md-flex">
-            <p class="text-black d-block text-center">
-              "Deep Work: Rules for Focused Success in a Distracted World"
-              adalah buku yang ditulis oleh Cal Newport, seorang profesor ilmu
-              komputer di Georgetown University dan penulis beberapa buku
-              tentang produktivitas dan karier.
-            </p>
-          </div>
-          <div class="card-footer d-md-flex">
-            <p class="text-black d-block text-center">
-                No Resi : 20240430142812367
-            </p>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- detail end -->
-
-    <script src="js/bootstrap.js"></script>
-    <script src="js/pooper.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-  </body>
 </html>
