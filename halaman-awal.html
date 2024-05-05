@@ -20,22 +20,23 @@
                     <a href="#">Shopee</a>
                 </div>
                 <ul class="sidebar-nav">
-                    <li class="sidebar-header">
-                        Admin Elements
+                    <li class="sidebar-item">
+                        <a href="halaman-awal.html" class="sidebar-link">
+                            Home
+                        </a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">
-                            <i class="fa-solid fa-list pe-2"></i>
+                        <a href="profile.html" class="sidebar-link">
                             Profile
                         </a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link"><i class="fa-solid fa-file-lines pe-2"></i>
+                        <a href="pesanan.html" class="sidebar-link">
                             Pesanan
                         </a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link"><i class="fa-solid fa-sliders pe-2"></i>
+                        <a href="login.html" class="sidebar-link">
                             Logout
                         </a>
                     </li>
@@ -62,58 +63,76 @@
                     </ul> -->
                 <!-- </div> -->
             </nav>
-            <main class="content px-3 py-2 text-dark bg-light">
+            <main class="content px-3 py-2 bg-light">
                 <div class="container-fluid">
                     <div class="mb-3 text-center">
-                        <h1>Selamat Datang anonymous</h1>
+                        <h1 class="text-lg font-bold bg-gradien custom">Selamat Datang anonymous</h1>
                     </div>
 
-                    <!-- Image Slider Start -->
-    <div id="carouselExampleIndicators" class="carousel slide mt-5" style="max-width: 1000px; margin: auto;">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="dist/img/slider3.jpg" class="d-block w-100" alt="..." height="250px"/>
+      <!-- Katalog Start -->
+    <h3 class="text-center my-0 mt-4 text-dark" id="product">Product Terlaris</h3>
+
+    <div class="row row-cols-md-3 row-cols-1 gx-3 p-5">
+      <div class="col mb-4">
+        <div class="card shadow">
+          <img
+            src="dist/img/sepatu-kulit.png"
+            class="card-img-top"
+            alt="Atomic Habits"
+            height="400px"
+          />
+          <div class="card-body">
+            <p class="card-text">Sepatu Kulit pria asli</p>
           </div>
-          <div class="carousel-item">
-            <img src="dist/img/slider2.jpg" class="d-block w-100" alt="..." height="250px"/>
+          <div class="card-footer d-md-flex">
+            <span class="ms-auto text-danger fw-bold d-block text-center"
+              >Rp. 175.000</span
+            >
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-      <!-- Image Slider End -->
+
+      <div class="col mb-5">
+        <div class="card shadow">
+          <img
+            src="dist/img/sepatu-kulit.png"
+            class="card-img-top"
+            alt="Atomic Habits"
+            height="400px"
+          />
+          <div class="card-body">
+            <p class="card-text">Sepatu Kulit Pria Asli</p>
+          </div>
+          <div class="card-footer d-md-flex">
+            <span class="ms-auto text-danger fw-bold d-block text-center"
+              >Rp. 175.000</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="col mb-5">
+        <div class="card shadow">
+          <img
+            src="dist/img/sepatu-kulit.png"
+            class="card-img-top"
+            alt="Atomic Habits"
+            height="400px"
+          />
+          <div class="card-body">
+            <p class="card-text">
+                Sepatu kulit pria asli
+            </p>
+          </div>
+          <div class="card-footer d-md-flex">
+            <span class="ms-auto text-danger fw-bold d-block text-center"
+              >Rp. 175.000</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Katalog End -->
 
                     <!-- <div class="row">
                         <div class="col-12 col-md-6 d-flex">

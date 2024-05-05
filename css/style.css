@@ -30,6 +30,14 @@ h4 {
     color: var(--bs-emphasis-color);
 }
 
+.custom {
+    background: linear-gradient(to right, #00dbde, #fc00ff);
+    font-weight: bold;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .btn-custom {
     background-color: #ee4d2d; /* Warna yang diinginkan */
     color: white; /* Warna teks putih agar terlihat jelas */
