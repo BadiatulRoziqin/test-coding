@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopee</title>
+    <link rel="icon" href="dist/img/favicon.png" />
+    <!-- css bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- my css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- cart -->
+    <link rel="stylesheet" href="css/cart.css" />
+    <!-- box icons  -->
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+    <!-- CSS for responsive layout -->
+    <style>
+        .product-box {
+            width: 100%; /* On mobile, make it full width */
+            margin-bottom: 20px;
+        }
+        @media (min-width: 768px) {
+            .product-box {
+                width: calc(25% - 20px); /* On desktop, divide into 4 columns with margin */
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <!-- Sidebar and main content -->
+</div>
+
+<!-- Modal for Product Detail -->
+<div id="productModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modal-product-title"></h2>
+        <p id="modal-product-price"></p>
+        <label for="product-size">Size:</label>
+        <select id="product-size">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+        </select>
+        <button id="add-to-cart">Add to Cart</button>
+    </div>
+</div>
+
+<!-- Detail Page for Product -->
+<div id="detailPage" class="hidden">
+    <h2 id="detail-product-title"></h2>
+    <p id="detail-product-price"></p>
+    <label for="detail-product-size">Size:</label>
+    <select id="detail-product-size">
+        <option value="small">Small</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+    </select>
+    <button id="add-to-cart-detail">Add to Cart</button>
+</div>
+
+<script src="js/bootstrap.js"></script>
+<script src="js/pooper.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/cart.js"></script>
+<script>
+    // Get the modal
+    var modal = document.getElementById("productModal");
+    var detailPage = document.getElementById("detailPage");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal
+    var buttons = document.querySelectorAll(".product-detail");
+    buttons.forEach(function(button) {
+        button.addEventListener("click", function() {
+            var productName = this.getAttribute("data-name");
+            var productPrice = this.getAttribute("data-price");
+            document.getElementById("modal-product-title").innerText = productName;
+            document.getElementById("modal-product-price").innerText = "Price: $" + productPrice;
+            modal.style.display = "block";
+        });
+    });
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+    // Function to show detail page
+    function showDetailPage(productName, productPrice) {
+        document.getElementById("detail-product-title").innerText = productName;
+        document.getElementById("detail-product-price").innerText = "Price: $" + productPrice;
+        detailPage.classList.remove("hidden");
+    }
+
+    // Add event listener to add to cart button in detail page
+    document.getElementById("add-to-cart-detail").addEventListener("click", function() {
+        var productName = document.getElementById("detail-product-title").innerText;
+        var productPrice = document.getElementById("detail-product-price").innerText.replace("Price: $", "");
+        var selectedSize = document.getElementById("detail-product-size").value;
+        // Add your cart logic here
+        console.log("Product Name: " + productName);
+        console.log("Product Price: " + productPrice);
+        console.log("Selected Size: " + selectedSize);
+    });
+</script>
+</body>
+</html>
