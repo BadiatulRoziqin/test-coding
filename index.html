@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="css/bootstrap.css" />
     <!-- my css -->
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/cart.css">
   </head>
   <body>
     <!-- Navbar start -->
@@ -107,105 +112,69 @@
     <!-- Image Slider End -->
 
     <!-- Katalog Start -->
-    <h3 class="text-center my-4 mt-4" id="product">Product Terlaris</h3>
 
-    <div class="row row-cols-md-3 row-cols-1 gx-3 p-5">
-      <div class="col mb-4">
-        <div class="card shadow">
-          <img
-            src="dist/img/rolex.jpg"
-            class="card-img-top"
-            alt="Atomic Habits"
-            height="400px"
-          />
-          <div class="card-body">
-            <p class="card-text">Jam Tangan Rolex</p>
-          </div>
-          <div class="card-footer d-md-flex">
-            <a href="detail/jam.html" class="btn btn-sm btn-primary d-block">Detail</a>
-            <span class="ms-auto text-danger fw-bold d-block text-center"
-              >Rp. 50.000.000</span
-            >
-          </div>
-        </div>
+    <!-- keranjang start -->
+    <div class="container mt-4">
+      <div class="float-end me-auto border ">
+      <i class="bx bx-shopping-bag" id="cart-icon">
+        <span class="cart-badge">0</span>
+      </i>
+    </div>
+      <!-- CART ICON with BADGE -->
+
+      <!-- NOTIFICATION -->
+      <div id="notification" class="notification hidden mt-5">
+        Item added to cart!
       </div>
 
-      <div class="col mb-5">
-        <div class="card shadow">
-          <img
-            src="dist/img/buku2.jpg"
-            class="card-img-top"
-            alt="Atomic Habits"
-            height="400px"
-          />
-          <div class="card-body">
-            <p class="card-text">Buku </p>
-          </div>
-          <div class="card-footer d-md-flex">
-            <a href="detail/buku.html" class="btn btn-sm btn-primary d-block">Detail</a>
-            <span class="ms-auto text-danger fw-bold d-block text-center"
-              >Rp. 75.000</span
-            >
-          </div>
+      <!-- CART -->
+      <div class="cart mt-5">
+        <h2 class="cart-title">Your Cart</h2>
+        <!-- CONTENT -->
+        <div class="cart-content">
+          <!-- Dynamic content -->
         </div>
+        <!-- TOTAL -->
+        <div class="total">
+          <div class="total-title">Total</div>
+          <div class="total-price">$0</div>
+        </div>
+        <!-- BUY BUTTON -->
+        <button type="button" class="btn-buy">Buy Now</button>
+        <!-- CART CLOSE -->
+        <i class="bx bx-x" id="cart-close"></i>
       </div>
+    </div>
+    <!-- keranjang end -->
+    <h3 class="text-center mx-auto my-4 mt-4" id="product">Product Terlaris</h3>
 
-      <div class="col mb-5">
-        <div class="card shadow">
-          <img
-            src="dist/img/shoes.jpg"
-            class="card-img-top"
-            alt="Atomic Habits"
-            height="400px"
-          />
-          <div class="card-body">
-            <p class="card-text">
-                Sepatu kulit pria
-            </p>
-          </div>
-          <div class="card-footer d-md-flex">
-            <a href="detail/sepatu.html" class="btn btn-sm btn-primary d-block">Detail</a>
-            <span class="ms-auto text-danger fw-bold d-block text-center"
-              >Rp. 120.000</span
-            >
-          </div>
-        </div>
+    <div class="row row-cols-md-3 row-cols-1 gx-3 p-5 mt-5">
+      <!-- BOX 1 -->
+      <div class="product-box mb-4">
+        <img src="dist/img/rolex.jpg" alt="" class="product-img" />
+        <h2 class="product-title">Jam Tangan Rolex</h2>
+        <span class="product-price">Rp50.000.000</span>
+        <a href="detail/jam.html" class="btn btn-sm btn-primary d-block w-50">Detail</a>
+        <i class="bx bx-shopping-bag add-cart"></i>
+      </div>
+      <!-- BOX 2 -->
+      <div class="product-box mb-4">
+        <img src="dist/img/buku2.jpg" alt="" class="product-img" />
+        <h2 class="product-title">Buku Deep Work</h2>
+        <span class="product-price">Rp84.000</span>
+        <a href="detail/buku.html" class="btn btn-sm btn-primary d-block w-50">Detail</a>
+        <i class="bx bx-shopping-bag add-cart"></i>
+      </div>
+      <!-- BOX 3 -->
+      <div class="product-box">
+        <i class="bx bx-shopping-bag add-cart"></i>
+        <img src="dist/img/sepatu-kulit.png" alt="" class="product-img" />
+        <h2 class="product-title">Sepatu Kulit Pria asli</h2>
+        <span class="product-price">Rp200.000</span>
+        <a href="detail/sepatu.html" class="btn btn-sm btn-primary d-block w-50">Detail</a>
       </div>
     </div>
     <!-- Katalog End -->
-
-    <!-- card -->
-    <!-- <div class="row row-cols-1 text-center row-cols-md-3 g-4 mt-3 bg-primary mb-4">
-      <div class="col-md-5 col-md-offset-1 ms-auto">
-        <div class="card">
-          <img src="dist/img/rolex.jpg" class="card-img-top" alt="hp" />
-          <div class="card-body">
-            <h5 class="card-title">Jam Tangan Rolex </h5>
-            <p class="card-text">
-              Sudirman Plaza Indofood Tower Lantai 23. Jl. Jend. Sudirman Kav.
-              76-78. Jakarta DKI Jakarta
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-5 col-md-offset-1 me-auto">
-        <div class="card">
-          <img
-            src="dist/gambar/lamborgini.jpg"
-            class="card-img-top"
-            alt="kaca"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Pabrik</h5>
-            <p class="card-text">
-              Pabrik utama dalam produksi seluruh makanan dan minuman yang ada
-              di dalam pt indofood
-            </p>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- akhir card -->
 
     <!-- kategory start -->
     <div class="container mt-5">
@@ -248,5 +217,7 @@
 
     <script src="js/bootstrap.js"></script>
     <script src="js/pooper.min.js"></script>
+    <script src="js/cart.js"></script>
+    <script scr="js/script.js"></script>
   </body>
 </html>
