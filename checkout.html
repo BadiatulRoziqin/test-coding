@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tampilan Home</title>
+    <link rel="icon" href="dist/img/favicon.png">
+    <!-- css bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- my css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/cart.css">
+  </head>
+  <body>
+    <!-- Navbar start -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top " style="background-color: #EE4D2D;"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Shopee</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#product">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav><br>
+    <!-- Navbar end -->
+
+    <div class="container mt-5">
+        <h1 class="text-center">Checkout</h1>
+        <div class="order-details">
+            <div class="product text-center">
+                <img src="dist/img/product8.jpg" alt="Product Image" style="width: 200px;">
+                <div class="product-info">
+                    <h2>Smartwatch</h2>
+                    <p>Jumlah: 1</p>
+                    <p>Harga: Rp150.000</p>
+                </div>
+            </div>
+            <div class="payment-method text-center">
+                <h2>Metode Pembayaran</h2>
+                <label>
+                    <input type="radio" name="payment" value="dana" checked>
+                    <span>Dana</span>
+                </label>
+                <label>
+                    <input type="radio" name="payment" value="gopay">
+                    <span>Gopay</span>
+                </label>
+                <label>
+                    <input type="radio" name="payment" value="ovo">
+                    <span>OVO</span>
+                </label>
+                <button class="order-button" onclick="window.location.href='index.html'; return false;">Pesan</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Start -->
+    <footer class="text-white text-center pb-1 pt-3 mt-5" style="background-color: #EE4D2D;">
+        <p>
+          Created with
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-heart-fill text-danger"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
+            />
+          </svg>
+          by
+          <a
+            href="https://www.instagram.com/badiatulroziqin/"
+            class="text-white fw-bold"
+            >Badiatul Roziqin</a
+          >
+        </p>
+      </footer>
+      <!-- Footer End -->
+  
+      <script src="js/bootstrap.js"></script>
+      <script src="js/pooper.min.js"></script>
+      <script src="js/cart.js"></script>
+      <script scr="js/script.js"></script>
+    </body>
+  </html>
